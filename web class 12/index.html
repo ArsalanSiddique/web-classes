@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background: red;
+            
+            /* transition-property: background;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 5s;
+             */
+            
+            transition: 5s ease-in-out 1s;
+        }
+
+        .square:hover {
+            width: 100px;
+            background: green;
+            transform: rotateZ(360deg);
+        }
+
+        .square2 {
+            width: 100px;
+            height: 100px;
+            background: tomato; 
+            position: relative;
+            /* animation-name: moving-square;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate; */
+
+
+            animation: moving-square 4s ease-in-out 2s 2 alternate;
+        }
+
+        @keyframes moving-square {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 0px;
+                left: 200px;
+                background-color: yellow;
+            }
+            50% {
+                top: 100px;
+                left: 200px;
+                background-color: blue;
+            }
+            75% {
+                top: 100px;
+                left: 0px;
+                background-color: purple;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: orange;
+            }
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border-top: 10px solid red;
+            border-right: 10px solid green;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid yellow;
+            background-color: black;
+
+            -moz-animation: preloader 2s linear 0s infinite;
+
+        }
+
+        @keyframes preloader {
+
+            0% {
+                transform: rotate(00deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="center">
+        <h1>Animation</h1>  
+    </div>
+
+
+    <!-- <div class="square">
+        <p> This is text </p>
+    </div> -->
+
+
+    <br>
+
+    <div class="square2"></div>
+
+    <br>
+
+    <div class="circle"></div>
+
+</body>
+</html>

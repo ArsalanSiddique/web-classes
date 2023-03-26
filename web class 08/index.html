@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List styles</title>
+
+    <style>
+        .list {
+            width: 80%;
+            background-color: lightblue;
+        }
+
+        ol {
+            /* list-style-type: lower-alpha; */
+            list-style-image: url('images/icon.png');
+            list-style-position: inside;
+        }
+
+
+        td {
+            padding: 20px;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+
+        .one {
+            border-collapse: collapse;
+        }
+
+        .two {
+            border-spacing: 20px;
+        }
+
+
+
+        .form-group {
+            width: 100%;
+        }
+
+        .title {
+            width: 100px;
+            float: left;
+        }
+
+        .form-control {
+            width: 278px;
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+
+            color: #5a5854;
+            background-color: #f2f2f2;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            background-color: aqua;
+            color: red;
+        }
+
+        .form-control:hover {
+            background-color: orange;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .btn {
+            color: #5a5854;
+            padding: 5px 15px;
+            border: 2px solid #bdbdbd;
+            border-radius: 5px;
+            background: #e6e6e6;
+            box-shadow: 6px 6px 12px #d6d6d6,
+                -6px -6px 12px #f6f6f6;
+            float: right;
+        }
+
+        .btn-green {
+            color: white;
+            background-color: #3cB043;
+        }
+
+        .btn-green:hover {
+            color: #3cB043;
+            background-color: white;
+            border: 2px solid #3cB043;
+
+            border-radius: 5px;
+            background: #e6e6e6;
+            box-shadow: inset 6px 6px 12px #d6d6d6,
+                inset -6px -6px 12px #f6f6f6;
+        }
+
+        .btn-red {
+            color: white;
+            background-color: #FF212E;
+        }
+
+        .btn-blue {
+            color: white;
+            background-color: #2832C2;
+        }
+
+        .btn-primary {
+            background-color: grey;
+            color: white;
+
+
+
+            /* background: linear-gradient(270deg, red 0%, blue 100%); */
+            /* background: radial-gradient(circle, red 0%, blue 100%); */
+
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: grey;
+            border: 2px solid grey;
+            box-shadow: inset 6px 6px 12px #d6d6d6,
+                inset -6px -6px 12px #f6f6f6;
+
+            cursor: wait;
+        }
+
+
+        fieldset {
+            width: 400px;
+            border: 2px solid #bdbdbd;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+
+        legend {
+            background-color: whitesmoke;
+            padding: 10px;
+            border: 2px solid #bdbdbd;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        a {
+            cursor: move;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- <div class="list">
+
+        <h1> List </h1>
+
+        <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>consectetur adipisicing elit.</li>
+            <li>Voluptas recusandae facilis voluptates velit</li>
+            <li>voluptate incidunt molestiae asperiores unde harum ex</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+            <li>neque delectus tempora possimus, nostrum consequuntur. Ducimus, nihil. Libero, minima.</li>
+        </ol>
+
+    </div>
+
+
+    <div class="tables">
+
+        <table class="one">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+
+        <table class="two">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+
+
+    </div> -->
+
+
+    <fieldset>
+        <legend>Newsletter</legend>
+
+
+        <div class="forms">
+            <form action="#" method="">
+
+                <div class="form-group">
+                    <label for="username" class="title">Username:</label>
+                    <input type="text" class="form-control" name="username" placeholder="Username" id="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="title">Email:</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="title">Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Your password"
+                        id="password">
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-primary">
+
+            </form>
+        </div>
+
+
+    </fieldset>
+
+
+
+    <a href="https://google.com"> Change cursor </a>
+
+
+
+</body>
+
+</html>

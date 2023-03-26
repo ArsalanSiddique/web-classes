@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Layout</title>
+
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            width: 100%;
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: aliceblue;
+        }
+
+        .header>h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 130%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: lightgray;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .banner {
+            background-image: url("https://t4.ftcdn.net/jpg/04/95/28/65/360_F_495286577_rpsT2Shmr6g81hOhGXALhxWOfx1vOQBa.jpg");
+            width: 100%;
+            height: 300px;
+        }
+
+        .col1of3,
+        .col2of3,
+        .col3of3 {
+            width: 30%;
+            float: left;
+            background-color: lightblue;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .features {
+            overflow: auto;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            padding: 20px;
+            margin: 0px;
+        }
+
+
+        .section {
+            overflow: auto;
+            padding: 40px 20px;
+        }
+
+        .bg-color {
+            background-color: whitesmoke;
+        }
+
+        .section-image {
+            width: 50%;
+            float: left;
+        }
+
+        .section-image img{
+            padding-top: 120px;
+            padding-left: 50px;
+        }
+
+        .section-content {
+            width: 50%;
+            float: left;
+        }
+
+        .section-content > h2 {
+            color: #57007F;
+            font-size: 48px;
+            font-family: Montserrat;
+            font-weight: 700;
+        }
+
+        .section-content > p {
+            color: gray;
+            line-height: 30px;
+            font-family: "sans-serif";
+            font-weight: 400;
+        }
+
+
+        .section-content > button {
+            border: 1px solid purple;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            color: white;
+            background-color: purple;
+            font-family: "sans-serif";
+            font-weight: bold;
+        }
+
+    </style>
+
+    <link href="https://fonts.googleapis.com/icon?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="header">
+            <h1>Logo</h1>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li> Home </li>
+                <li> About </li>
+                <li> Services </li>
+                <li> Contact </li>
+            </ul>
+        </div>
+
+        <div class="banner"></div>
+
+
+        <div class="section bg-color">
+            <div class="section-image">
+                <img src="images/about.png" alt="about-us-img">
+            </div>
+            <div class="section-content">
+                <h2>Who we are?</h2>
+                <p>We are the leading website design company in Pakistan which offers a wide range of services to our
+                    clients that include website designing, website development, mobile app development, software
+                    development, graphic designing, SEO, and much more. Our experienced team of web designers and
+                    developers aims to create user-friendly, fast, and premium website solutions to strengthen your
+                    brand’s online presence. We understand that a creative and high-performance website greatly
+                    contributes to enhancing your brand’s visibility. That is why our website development company
+                    ensures to create state-of-the-art and advanced web designs that give your business a competitive
+                    edge.
+                </p>
+                <button>
+                    Learn more
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <h2>Who we are?</h2>
+                <p>We are the leading website design company in Pakistan which offers a wide range of services to our
+                    clients that include website designing, website development, mobile app development, software
+                    development, graphic designing, SEO, and much more. Our experienced team of web designers and
+                    developers aims to create user-friendly, fast, and premium website solutions to strengthen your
+                    brand’s online presence. We understand that a creative and high-performance website greatly
+                    contributes to enhancing your brand’s visibility. That is why our website development company
+                    ensures to create state-of-the-art and advanced web designs that give your business a competitive
+                    edge.
+                </p>
+                <button>
+                    Learn more
+                </button>
+            </div>
+            <div class="section-image">
+                <img src="images/about.png" alt="about-us-img">
+            </div>
+        </div>
+
+        <div class="section bg-color">
+            <div class="section-image">
+                <img src="images/about.png" alt="about-us-img">
+            </div>
+            <div class="section-content">
+                <h2>Who we are?</h2>
+                <p>We are the leading website design company in Pakistan which offers a wide range of services to our
+                    clients that include website designing, website development, mobile app development, software
+                    development, graphic designing, SEO, and much more. Our experienced team of web designers and
+                    developers aims to create user-friendly, fast, and premium website solutions to strengthen your
+                    brand’s online presence. We understand that a creative and high-performance website greatly
+                    contributes to enhancing your brand’s visibility. That is why our website development company
+                    ensures to create state-of-the-art and advanced web designs that give your business a competitive
+                    edge.
+                </p>
+                <button>
+                    Learn more
+                </button>
+            </div>
+        </div>
+
+
+        <div class="features">
+
+            <div class="col1of3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta dolore eveniet sit
+                laboriosam. Alias in nostrum corporis id beatae delectus doloribus velit et eius, earum, culpa
+                laudantium! Aperiam, doloribus.
+            </div>
+            <div class="col2of3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nemo vitae facilis aperiam nostrum
+                id tenetur voluptas, incidunt natus dolorum tempore consequuntur! Aperiam nisi, quisquam corrupti
+                tempore vel magni deleniti.
+            </div>
+            <div class="col3of3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, porro deserunt
+                voluptatibus culpa sequi, eaque adipisci voluptates aliquam perspiciatis vitae magni. Libero nemo, totam
+                odio corporis cupiditate error!
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>
+                Copyright | All rights reserved
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

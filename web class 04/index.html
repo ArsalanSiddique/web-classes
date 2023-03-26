@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+    </head>
+    <body>
+        
+
+        <center><h1>Forms</h1></center>
+
+        <form action="abcd.php" method="get">
+
+            <fieldset>
+
+                <legend>Student Basic Information</legend>
+
+                <label for="username"> Username </label>
+                <input type="text" size="20" id="username" maxlength="10" value="Arsalan" name="username" required />
+                
+
+                <br>
+
+                <label for="password">Passowrd</label>
+                <input type="password" id="password" size="20" maxlength="10" name="password" />
+                
+                <br>
+
+                <label for="description">Description:</label>
+                <textarea cols="20" id="description" rows="10"></textarea>
+
+            </fieldset>
+
+            
+
+
+
+            <p>Select your gender:
+
+
+                <label for="male">
+                    
+                    
+                    Male
+
+                </label>
+                
+                
+                
+                
+                <input type="radio" name="gender" value="female" /> Female
+                <input type="radio" name="gender" value="other" checked /> Other
+                <input type="radio" name="gender" value="dont like to share" /> Don't like to  share
+
+
+
+                <input type="radio" name="gender" id="male" value="male" /> 
+            </p>
+
+            <p>
+                Select your hobby:
+
+                <input type="checkbox" name="hobby" value="cricket" /> Cricket
+                <input type="checkbox" name="hobby" value="books" /> Books
+                <input type="checkbox" name="hobby" value="games" checked /> Games
+                <input type="checkbox" name="hobby" value="football" /> Football
+            </p>
+
+            <p>
+                Select your country:
+                <select name="country">
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="china" selected>China</option>
+                </select>
+            </p>
+
+            <p>
+                Select Class:
+                <select name="class" multiple>
+                    <option class="1">Class I</option>
+                    <option class="2">Class II</option>
+                    <option class="3">Class III</option>
+                    <option class="4">Class IV</option>
+                    <option class="5">Class V</option>
+                    <option class="6">Class VI</option>
+                    <option class="7">Class VII</option>
+                </select>
+            </p>
+
+            <p>
+                Upload your file:
+                <input type="file" name="file">
+            </p>
+            
+            <input type="image" src="button.png" width="100" height="100" />
+            <input type="hidden" name="myname" value="arsalan" />
+            
+            
+            
+            <input type="submit" name="submit" value="Register yourself" >
+            <button> my button </button>
+
+
+
+
+
+
+        </form>
+
+
+
+        <form action="">
+
+            <fieldset>
+                <legend>Search</legend>
+
+
+                <label for="search"> Search </label>
+                <input type="email" name="search" id="search" placeholder="Enter your key" />
+
+                <input type="submit" value="Search" name="submit" />
+
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>

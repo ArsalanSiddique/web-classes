@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            border: 5px solid red;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .content {
+            background-color: palevioletred;
+            color: black;
+        }
+
+        @media only screen and (min-width: 992px) {
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .col-sm-3 {
+                width: 25%;
+            }
+
+            .col-sm-6 {
+                width: 50%;
+            }
+
+            .col-sm-9 {
+                width: 75%;
+            }
+
+            .col-sm-12 {
+                width: 100%;
+            }
+
+            .d-sm-none {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 992px) {
+
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-6 {
+                width: 50%;
+            }
+
+            .col-md-9 {
+                width: 75%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+
+        }
+
+
+        @media only screen and (orientation: landscape) {
+            [class*="col-"] {
+                /* background-color: red; */
+            }
+        }
+
+        @media print {
+            [class*="col-"] {
+                background-color: red;
+            }
+
+            @page { size: A5 landscape;}
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="row">
+
+        <div class="col-3 col-md-6 col-sm-12">
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, dolor nisi aut dolore dolorum, at animi
+                facilis consectetur mollitia odio maxime dicta earum voluptatibus? Necessitatibus aut cum deserunt dolor
+                delectus?</p>
+
+        </div>
+        <div class="col-9 col-md-6 col-sm-12">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil amet necessitatibus ad vero explicabo,
+                atque fugiat eaque sit dolor aliquam a, pariatur voluptatum recusandae quaerat cupiditate quo in facere
+                sunt.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 d-sm-none content">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit libero eaque omnis. Autem repudiandae beatae consequuntur, pariatur laborum ducimus assumenda nemo quidem consequatur, iusto aperiam accusamus et, vel laboriosam!
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 col-sm-12">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel maxime reprehenderit explicabo,
+                possimus fugit iste est officia accusamus saepe autem modi voluptas incidunt aliquam amet tempore nam
+                placeat inventore.
+            </p>
+        </div>
+        <div class="col-6 col-sm-12">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam sit voluptate, ad hic nulla iste similique
+                optio illo non earum dolorum omnis inventore deleniti placeat enim facilis deserunt quia explicabo!
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

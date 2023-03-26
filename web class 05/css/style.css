@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+}
+
+.intro {
+    color: brown;
+}
+
+h1.services {
+    color: blue;
+    background-color: #403231;
+    opacity: 0.9;
+}
+
+p {
+    color: grey !important;
+}
+
+p {
+    color: pink;
+}
+
+li {
+    color: red;
+}
+
+li>a {
+    color: black;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+
+/* Defining University Styles */
+span.university {
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: oblique;
+    color: black;
+    background-color: white;
+    text-transform: lowercase;
+}
+
+
+/* @font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/chunkfive.eot');
+} */
+
+.header {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.row {
+    background-color: red;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.video {
+    background-color: blue;
+    width: 24%;
+    margin: 2px;
+    float: left;
+}

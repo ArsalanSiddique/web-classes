@@ -1,0 +1,38 @@
+table {
+    border-spacing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid #01987a;
+
+
+    border-collapse: collapse;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 4px 4px 10px lightgray;
+}
+
+.heading {
+    background-color: #01987a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.heading>th {
+    padding: 20px;
+}
+
+.middle {
+    background-color: #f3f3f3;
+    color: #01987a;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+}
+
+td {
+    padding: 20px;
+}
+
+.center {
+    margin: 0 auto;
+}
+

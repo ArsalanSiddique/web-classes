@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+</head>
+
+<style>
+    #preloader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #preloader h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+
+
+    <div id="preloader">
+        <h1>Loading...</h1>
+    </div>
+
+
+    <script>
+        function typeText() {
+            var text = "Loading...";
+            var index = 0;
+            var preloader = document.getElementById("preloader");
+            var h1 = preloader.querySelector("h1");
+
+            function type() {
+                if (index < text.length) {
+                    h1.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                }
+            }
+
+            setTimeout(type, 500);
+        }
+
+
+        window.onload = function () {
+            typeText();
+        }
+    </script>
+
+</body>
+
+</html>

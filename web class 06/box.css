@@ -1,0 +1,105 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+
+
+    /* border: 40px groove green; */
+
+    border-width: 40px 40px 40px 40px;
+/* 
+    border-top-width: 10px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 10px; */
+
+    border-top-style: solid;
+    border-right-style: groove;
+    border-left-style: dashed;
+    border-bottom-style: dotted;
+
+    border-color: green; 
+}
+
+.box p {
+    text-align: justify;
+}
+
+.box-2 {
+    max-width: 250px;
+    min-width: 150px;
+    max-height: 250px;
+    min-height: 150px;
+    background-color: aqua;
+    overflow: scroll;
+}
+
+.para-1 {
+    color: red;    
+}
+
+.para-2 {
+    color: green;    
+}
+
+.para-3 {
+    color: blue;
+}
+
+
+.container {
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    margin: 0px;
+    padding: 20px auto 20px auto;
+}
+
+.details {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    /* box-shadow: inset 2px 2px 5px 5px white; */
+    border: 2px solid white;
+}
+
+.center {
+    margin: auto;
+}
+
+.menu {
+    width: 100%;
+}
+
+.list {
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.list li{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li.comming-soon {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+}

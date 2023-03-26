@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+
+
+    <style>
+        body {
+            background-color: #f7fafc;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .wrapper {
+            width: 100%;
+            color: black;
+        }
+
+        .navbar {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 25%;
+            float: left;
+        }
+
+        .navbar ul {
+            position: fixed;
+            list-style: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navbar ul a {
+            text-decoration: none;
+            color: #2a4365;
+            font-size: 18px;
+        }
+
+        .navbar ul li {
+            margin-bottom: 10px;
+        }
+
+        #documentation {
+            width: 65%;
+            padding: 50px;
+            color: black;
+            float: right;
+        }
+
+        .code {
+            width: 90%;
+            padding: 20px;
+            background-color: #292d3e;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .inner-navbar {
+            padding-bottom: 20px;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .inner-navbar ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .inner-navbar ul a {
+            text-decoration: none;
+            color: #2a4365;
+        }
+
+        .inner-navbar ul li {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #2a4365;
+            font-size: 36px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1>span {
+            color: tomato;
+        }
+
+        code>span {
+            color: tomato;
+        }
+
+        .output {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <nav class="navbar">
+            <ul>
+                <a href="#intro">
+                    <li> Introduction </li>
+                </a>
+                <a href="#heading">
+                    <li> Heading </li>
+                </a>
+                <a href="#paragraph">
+                    <li> Paragraph </li>
+                </a>
+                <a href="#images">
+                    <li> Images </li>
+                </a>
+                <a href="#audio-video">
+                    <li> Audio Video </li>
+                </a>
+                <a href="#iframe">
+                    <li> Iframe </li>
+                </a>
+                <a href="#table">
+                    <li> Table </li>
+                </a>
+                <a href="#forms">
+                    <li> Forms </li>
+                </a>
+            </ul>
+        </nav>
+
+        <div id="documentation">
+
+
+            <nav class="inner-navbar">
+                <ul>
+                    <a href="#intro">
+                        <li> Introduction </li>
+                    </a>
+                    <a href="#heading">
+                        <li> Heading </li>
+                    </a>
+                    <a href="#paragraph">
+                        <li> Paragraph </li>
+                    </a>
+                </ul>
+            </nav>
+
+            <section id="intro">
+
+                <header>
+                    <h1> <span>#</span> Introduction</h1>
+                </header>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt enim odit vitae unde asperiores
+                    pariatur earum animi possimus fugiat, et repudiandae, distinctio velit provident nostrum sed iusto,
+                    iure qui tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt enim odit vitae
+                    unde asperiores pariatur earum animi possimus fugiat, et repudiandae, distinctio velit provident
+                    nostrum sed iusto, iure qui tempora.u
+                </p>
+
+            </section>
+
+            <section id="heading">
+
+                <header>
+                    <h1> <span>#</span> Heading</h1>
+                </header>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores cupiditate saepe?
+                    Laboriosam at, sequi, ea minus consequatur quae voluptate sit nesciunt autem accusantium, quia atque
+                    numquam obcaecati neque! Accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    corporis autem reiciendis quae a, sed officiis tempore nobis delectus eaque iste eum aspernatur est
+                    minus officia harum optio accusamus voluptates!
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, odio. Distinctio aspernatur sint
+                    soluta blanditiis laborum. Odit, tempore temporibus rem, necessitatibus quos numquam suscipit ut
+                    unde dignissimos non qui modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+                    iure nam nesciunt animi corrupti obcaecati error repellat laboriosam itaque id veniam, cumque ab
+                    incidunt aperiam voluptas fugit voluptates modi reiciendis.
+                </p>
+
+                <ul>
+                    <li> h1 </li>
+                    <li> h2</li>
+                    <li> h3 </li>
+                    <li> h5 </li>
+                    <li> h6 </li>
+                </ul>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span><span>&lt;h1&gt;</span></span> This is heading 1 <span>&lt;/h1&gt;</span>
+                    </code>
+                </pre>
+                </div>
+
+                <div class="output">
+                    <h1>This is heading</h1>
+                </div>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span>&lt;h2&gt;</span> This is heading 2 <span>&lt;/h2&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <h2>This is heading</h2>
+                </div>
+
+
+                <div class="code">
+                    <pre>
+                    <code>
+<span>&lt;h3&gt;</span> This is heading 3 <span>&lt;/h3&gt;</span>
+                    </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <h3>This is heading</h3>
+                </div>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span>&lt;h4&gt;</span> This is heading 4 <span>&lt;/h4&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <h4>This is heading 4</h4>
+                </div>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span>&lt;h&gt;</span> This is heading 5 <span>&lt;/h5&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <h5>This is heading 5</h5>
+                </div>
+
+                <div class="code">
+                    <pre>
+                    <code>
+<span>&lt;h6&gt;</span> This is heading 6 <span>&lt;/h6&gt;</span>
+                    </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <h6>This is heading 6</h6>
+                </div>
+
+            </section>
+
+            <section id="paragraph">
+
+                <header>
+                    <h1> <span>#</span> Paragraph</h1>
+                </header>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores cupiditate saepe?
+                    Laboriosam at, sequi, ea minus consequatur quae voluptate sit nesciunt autem accusantium, quia atque
+                    numquam obcaecati neque! Accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    corporis autem reiciendis quae a, sed officiis tempore nobis delectus eaque iste eum aspernatur est
+                    minus officia harum optio accusamus voluptates!
+                </p>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span class="tag">&lt;p&gt;</span> This is paragraph<span>&lt;/p&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <p>This is paragraph</p>
+                </div>
+
+            </section>
+
+
+            <section id="table">
+                <header>
+                    <h1> <span>#</span> Table </h1>
+                </header>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos deleniti ipsam asperiores voluptate
+                    itaque veritatis natus porro reprehenderit? Aliquam, facere repellat! Vel quia ea vitae sit
+                    molestiae! Eveniet, cumque fugiat.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptas, corrupti quia culpa
+                    veritatis quidem maiores quam ipsam a voluptatibus, pariatur voluptates. Exercitationem soluta
+                    repellat cupiditate quae alias laudantium quidem!
+                </p>
+
+                <div class="code">
+                    <pre>
+                        <code>
+<span>&lt;table&gt;</span>
+    <span>&lt;tr&gt;</span>
+        <span>&lt;th&gt;</span>Company<span>&lt;/th&gt;</span>
+        <span>&lt;th&gt;</span>Contact<span>&lt;/th&gt;</span>
+        <span>&lt;th&gt;</span>Country<span>&lt;/th&gt;</span>
+    <span>&lt;/tr&gt;</span>
+    <span>&lt;tr&gt;</span>
+        <span>&lt;td&gt;</span>AlfredsFutterkiste<span>&lt;/td&gt;</span>
+        <span>&lt;td&gt;</span>MariaAnders<span>&lt;/td&gt;</span>
+        <span>&lt;td&gt;</span>Germany<span>&lt;/td&gt;</span>
+    <span>&lt;/tr&gt;</span>
+    <span>&lt;tr&gt;</span>
+        <span>&lt;td&gt;</span>CentrocomercialMoctezuma<span>&lt;/td&gt;</span>
+        <span>&lt;td&gt;</span>FranciscoChang<span>&lt;/td&gt;</span>
+        <span>&lt;td&gt;</span>Mexico<span>&lt;/td&gt;</span>
+    <span>&lt;/tr&gt;</span>
+<span>&lt;/table&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="output">
+                    <table>
+                        <tr>
+                            <th>Person 1</th>
+                            <th>Person 2</th>
+                            <th>Person 3</th>
+                        </tr>
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

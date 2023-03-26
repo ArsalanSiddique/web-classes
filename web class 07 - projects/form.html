@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        body {
+            background-color: #05c46b;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .card {
+            width: 600px;
+            padding: 18px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .box-center {
+            margin: 0 auto;
+        }
+
+        .form-control {
+            color: black;
+            width: 96%;
+            padding: 12px;
+            margin-top: 5px;
+            background-color: lightsteelblue;
+        }
+
+        .input-group {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .mb-1 {
+            margin-bottom: 50px;
+        }
+
+        .mb-2 {
+            margin-bottom: 20px;
+        }
+
+        .mb-3 {
+            margin-bottom: 30px;
+        }
+
+        .pb-3 {
+            padding-bottom: 30px;
+        }
+
+        .line-height {
+            line-height: 30px;
+        }
+
+        .button {
+            color: white;
+            font-weight: bold;
+            background-color: #05c46b;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .button:hover {
+            background-color: white;
+            border: 2px solid #05c46b;
+            color: #000;
+            box-shadow: 0px 0px 0px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="text-center"> Survey Form </h1>
+
+    <div class="card box-center">
+
+        <form>
+
+            <div class="input-group">
+                <label for="name" class="label">Name:</label>
+                <input type="text" name="name" class="form-control" id="name">
+            </div>
+
+            <div class="input-group">
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="email" class="form-control" id="email">
+            </div>
+
+            <div class="input-group">
+                <label for="phone" class="label">Phone:</label>
+                <input type="phone" name="phone" class="form-control" id="phone">
+            </div>
+
+            <div class="input-group">
+                <label for="age" class="label">Age:</label>
+                <input type="number" name="age" class="form-control" id="age">
+            </div>
+
+            <div class="input-group">
+                <label for="question" class="label">Which option best subscribe you?</label>
+                <select name="question" class="form-control" id="question">
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="police">Police</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="suggestion" class="label line-height">Would you recomend geeksForGeeks to friend?</label>
+                <br>
+                <input type="radio" name="suggestion" id="suggestion" value="yes"> Yes
+                <br>
+                <input type="radio" name="suggestion" id="suggestion" value="no"> No
+                <br>
+                <input type="radio" name="suggestion" id="suggestion" value="maybe"> Maybe
+            </div>
+
+            <button class="button"> Submit </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
