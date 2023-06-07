@@ -1,0 +1,98 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #eff8ff;
+}
+
+.header {
+    margin-top: 20px;
+    overflow: hidden;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: Poppins;
+}
+
+.banner {
+    overflow: hidden;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: Poppins;
+}
+
+.logo {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rebeccapurple;
+    float: left;
+}
+
+.nav {
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    float: right;
+}
+
+.nav li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+.active {
+    /* border-bottom-width: 10%;
+    border-bottom: 4px solid rebeccapurple; */
+}
+
+.typo {
+    margin-top: 100px;
+    float: left;
+}
+
+.typo>p {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.typo>.text-diff {
+    color: rebeccapurple !important;
+}
+
+.button {
+    font-family: poppins;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bannerImage {
+    margin-top: 100px;
+    float: right;
+}
+
+.social-icons {
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 120px;
+}
+
+.social-icons>li {
+    display: inline;
+    font-size: 22px;
+    padding: 0px 10px;
+    color: #353935;
+}
+
+.bannerImage>img {
+    border-radius: 10px;
+    border: 1px solid #E5E4E2;
+    box-shadow: 1px 5px 5px grey;
+}
