@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        var student_name    = prompt("Enter your name");
+        var english         = prompt("Enter english marks");
+
+        if (english >= 100) {
+            alert("you enter an invalid marks");
+            english = prompt("Enter english marks again");
+        }
+
+        var islamiat        = prompt("Enter islamiat marks");
+
+        if (islamiat >= 100){
+            alert("you enter an invalid marks");
+            islamiat = prompt("Enter islamiat marks again");
+        }
+
+        var urdu            = prompt("Enter urdu marks");
+
+        if (urdu >= 100){
+            alert("you enter an invalid marks")
+            urdu = prompt("enter urdu marks again")
+        }
+
+        var math            = prompt("Enter math marks");
+        
+        if (math >= 100){
+            alert("you enter an invalid marks")
+            math = prompt("enter math marks again")
+        }
+
+
+        var obtained_marks  = parseInt(english) + parseInt(islamiat) + parseInt(urdu) + parseInt(math);
+        var total_marks     = 400;
+        var percantage      = (obtained_marks / total_marks) * 100;
+        
+        var grade;
+        if (percantage >= 50 && percantage <= 59.9) {
+            grade = "C";
+        }
+        else if (percantage >= 60 && percantage <= 69.9){
+            grade = "B";
+        }
+        else if (percantage >= 70 && percantage <= 79.9){
+            grade = "A";
+        }
+        else if (percantage >= 80){
+            grade ="A1";
+        }
+        else {
+            grade = "F";
+        }
+        
+        alert(student_name + " you got " + percantage + "% and your grade is " + grade);
+
+    </script>
+
+</body>
+
+</html>
