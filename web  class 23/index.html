@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Tabulation</title>
+</head>
+
+<body>
+
+
+<script>
+
+    var total_student = prompt("Enter number of students."); // 2
+    var total_marks = 500;
+    var message = [];
+    var student_names = [];
+    var math_marks = [];
+    var urdu_marks = [];
+    var english_marks = [];
+    var islamiat_marks = [];
+    var science_marks = [];
+    var percentage = [];
+    var obtained_marks = [];
+    var grade = [];
+
+    for (var i = 0; i < total_student; i++) {
+
+        student_names.push(prompt("Enter your student name."));
+        math_marks.push(prompt("Enter " + student_names[i] + " math marks."));
+        urdu_marks.push(prompt("Enter " + student_names[i] + " urdu marks."));
+        english_marks.push(prompt("Enter " + student_names[i] + " english marks."));
+        islamiat_marks.push(prompt("Enter " + student_names[i] + " islamiat marks."));
+        science_marks.push(prompt("Enter " + student_names[i] + " science marks."));
+
+        obtained_marks.push(
+            parseInt(math_marks[i]) + parseInt(urdu_marks[i]) + parseInt(english_marks[i]) + parseInt(islamiat_marks[i]) + parseInt(science_marks[i])
+        );
+
+        percentage.push(
+            ((obtained_marks[i] / total_marks) * 100)
+        );
+
+
+        if (percentage[i] >= 35 && percentage[i] <= 49.9) {
+            grade.push("D");
+        } else if (percentage[i] >= 50 && percentage[i] <= 59.9) {
+            grade.push("C");
+        } else if (percentage[i] >= 60 && percentage[i] <= 69.9) {
+            grade.push("B");
+        } else if (percentage[i] >= 70 && percentage[i] <= 79.9) {
+            grade.push("A");
+        } else if (percentage[i] >= 80) {
+            grade.push("A+");
+        } else {
+            grade.push("F");
+        }
+
+        message.push("\nYour student " + student_names[i] + " got " + obtained_marks[i] + " out of " + total_marks + " and percentage:s" + percentage[i] + " % and grade: " + grade[i]);
+
+    }
+
+
+
+
+    alert(message);
+
+
+
+</script>
+
+
+</body>
+
+</html>

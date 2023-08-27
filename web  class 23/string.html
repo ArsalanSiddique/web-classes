@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+<script>
+
+    var name = "Boston"
+    var sliceString = name.slice(2, 6); // sto  
+                        // slice(inclusive-index, exclusive-index);
+    // alert(sliceString);
+
+
+
+
+
+
+
+
+
+
+
+
+    // var name = prompt("Enter your name");
+    // name = name.toLowerCase();
+    // var firstChar = name.slice(0, 1);
+    // firstChar = firstChar.toUpperCase();
+    // var remainingChar = name.slice(1);
+
+    // var camelCaseString = firstChar + remainingChar;
+    // alert(camelCaseString);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var message = prompt("Enter any message");
+    var strLength = message.length;
+    var pieceOfStr;
+    
+    for(var i = 0; i < strLength; i++) {
+
+        pieceOfStr = message.slice(i, i+12);
+
+        if(pieceOfStr.toLowerCase() == "world war II") {
+            alert("Double spaces not allowed");
+            break;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
