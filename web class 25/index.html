@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // var num1 = Number("3");
+        // var num2 = Number("1.011");
+
+        // var result = num1/num2;
+        // alert((num1/num2).toFixed());
+
+
+
+        var num = 1.55;
+        var str = num.toString();                           // Assign operator
+
+        if (str.charAt(str.length - 1) === "5") {
+            str = str.slice(0, str.length - 1) + "6";       // "1.5" + "6"
+        }
+
+        num         = Number(str);
+        prettyNum   = num.toFixed(2);
+        alert(prettyNum);                                   // 1.56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
