@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var date = new Date();
+        var daysName = ["Sun", "Mon", "Tue"];
+        var dayNumber = date.getDay();
+
+        var todayName = daysName[dayNumber];
+        // alert(todayName);
+
+
+        var miliseconds = date.getTime();
+        // alert(miliseconds);
+
+
+
+
+
+        // var eidDate = new Date("April 10, 2024 00:00:00:00");
+        // var dateDiff = eidDate-date;
+        // var remainingDate = Math.floor(dateDiff/(1000 * 60 * 60 * 24));
+        // alert(remainingDate);
+
+
+
+
+        var newdate = date.setFullYear("2024");
+        alert(date);
+
+
+
+    </script>
+
+
+</body>
+</html>

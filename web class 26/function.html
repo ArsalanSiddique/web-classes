@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        // function tellTime() {
+        //     var date = new Date();
+        //     var hr = date.getHours();
+        //     var min = date.getMinutes();
+
+        //     alert("Time: " + hr + ":" + min);
+        // }
+
+
+
+        // tellTime();
+        // tellTime();
+
+
+
+
+
+
+
+
+
+
+        // function greetUser(greetings, name) {
+        //     alert(greetings + "! " + name);
+        // }
+
+        // var greetings = "Hello Welcome";
+        // var name = "Zeeshan";
+
+        // greetUser(name, greetings);
+
+
+
+
+
+
+        function calaculateShipment(merchantTotal) {
+
+            var orderTotal;
+            if (merchantTotal >= 100) {
+                orderTotal = merchantTotal
+            } else if (merchantTotal <= 50) {
+                orderTotal = parseInt(merchantTotal) + 5
+            } else {
+                orderTotal = parseInt(merchantTotal) + 5 + (0.03 * (merchantTotal - 50))
+            }
+
+            return orderTotal;
+
+        }
+
+        var userImput = prompt("Enter product amount");
+        var total = calaculateShipment(userImput);
+        alert(total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
