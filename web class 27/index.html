@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+
+
+
+
+    <script src="time.js"></script>
+    <script>
+
+        var name = "Arsalan";
+        var shop = "Metro";
+        var city = "Karachi";
+
+
+        var msg = greetings(name, shop);
+        document.write(msg);
+
+        tellTime();
+
+
+        // alert(city);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // dayOfWk = "Sat";
+        // switch(dayOfWk) {
+
+        //     case "Sat":
+        //         alert("Hurrayyyy!");
+        //         break;
+            
+        //     case "Sun":
+        //         alert("Hurrayyyy!");
+        //         break;
+
+        //     case "Sat":
+        //         alert("All okay");
+        //         break;
+
+        //     default:
+        //         alert("Shoot me now");
+
+        // }
+
+
+
+
+
+        // i = 0;
+
+        // while(i <= 3) {
+
+
+        //     alert(i);
+        //     i++;
+
+        // }
+
+
+        // j = 0;
+        // do {
+
+        //     alert(j);   
+        //     j++;
+
+        // } while(j <=  3);
+
+
+
+
+
+
+        var total = 0;
+
+        do {
+
+            var userInput = prompt("Enter an even number.", "0");
+            var oddOrEven = userInput%2;
+            
+            if(oddOrEven == 0) {
+                total += parseInt(userInput);
+                // total = total + userInput;
+            }
+
+        } while(oddOrEven == 0);
+        
+        alert(total);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
