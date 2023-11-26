@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Events</h1>
+
+
+
+    <form onSubmit="validateForm('email')">
+
+        <input type="email" id="email" onFocus="this.style.color='red'" placeholder="type your email">
+
+
+        <input type="text" name="zip" id="zip" onBlur="fillCityName()" placeholder="Enter zipcode">
+
+        <input type="text" name="city" id="city" placeholder="Enter your city name">
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+
+
+
+
+
+    <img src="before.jpg" onMouseover="src='after.png'" onMouseout="src='before.jpg'" alt="">
+
+
+    <a href="JavaScript:void(0)" onClick="myFunction('Hi')"> Click me </a>
+    <input type="button" value="My btn" onClick="myFunction('Hi')">
+
+    <script>
+
+        function myFunction(greeting) {
+            alert(greeting);
+        }
+
+        function validateForm(fieldId) {
+            var fieldValue = document.getElementById(fieldId).value;
+            if (fieldValue === "") {
+                alert('Email is required');
+            }
+        }
+
+        function fillCityName() {
+            var zipCode = document.getElementById('zip').value;
+            var cityName;
+
+            switch (zipCode) {
+                case '1001':
+                    cityName = 'Karachi';
+                    break;
+
+                case '1002':
+                    cityName = 'Lahore';
+                    break;
+
+                case '1003':
+                    cityName = 'Queta';
+                    break;
+
+                case '1004':
+                    cityName = 'Islamabad';
+                    break;
+            }
+
+            document.getElementById('city').value = cityName;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
