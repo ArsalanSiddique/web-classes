@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hiddden {
+            display: none;
+        }
+        .profile {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <input type="text" name="username" id="username" placeholder="Enter user name" -->
+    <!-- onfocus="this.style.backgroundColor='yellow'" onblur="this.style.backgroundColor='red'"> -->
+
+
+    <form action="">
+
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+        <input type="text" name="lastname" id="lastname" onblur="fillFullName()" placeholder="Enter your last name">
+
+
+        <input type="text" name="fullname" id="fullname" value="AASDADASDD">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime
+        laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi
+        delectus.
+        <a href="javascript:void(0);" onclick="updateContent()">Click for read more...</a>
+    </p>
+
+
+    <img src="arsalan.png" id="image01" class="profile" alt="fish" onclick="swapImage(id, 'replace1.jpg')">
+    <img src="flower0.webp" id="image02" class="profile" alt="fish" onclick="swapImage(id, 'replace2.jpeg')">
+    <img src="flower1.jpeg" id="image03" class="profile" alt="fish" onclick="swapImage(id, 'replace3.jpg')">
+
+
+    <script>
+        function fillFullName() {
+            var firstName = document.getElementById("firstname").value;
+            var lastName = document.getElementById("lastname").value;
+
+            // console.log(firstName);
+            // console.log(lastName);
+
+            var fullName = firstName + " " + lastName;
+
+            document.getElementById("fullname").value = fullName;
+        }
+
+        function updateContent() {
+            var fullPara = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. <a href='javascript:void(0);' onclick='readLess()'>Click for read less...</a>";
+
+            document.getElementById("paragraph").innerHTML = fullPara;
+        }
+
+        function readLess() {
+            var halfPara = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus fugit repellendus earum maxime laudantium. Ipsa fuga a impedit sint recusandae, quis, inventore ad vitae magnam, voluptatibus nisi animi delectus. <a href='javascript:void(0);' onclick='updateContent()'>Click for read more...</a>";
+
+            document.getElementById("paragraph").innerHTML = halfPara;
+        }
+
+        function hideImage() {
+            // document.getElementById('profile').className = ' hiddden';
+            document.getElementById('profile').className += ' hiddden';
+        }
+
+        function swapImage(elementId, fileName) {
+            document.getElementById(elementId).src = fileName;
+        }
+    </script>
+
+</body>
+
+</html>
