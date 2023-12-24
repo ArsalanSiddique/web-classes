@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web class 31</title>
+
+
+    <style>
+        #div1 {
+            border: 1px solid red;
+            padding: 20px;
+        }
+
+        #div2 {
+            border: 1px solid green;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="div1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, numquam. Vitae eligendi
+            repellendus perferendis vero fuga, deserunt libero, ipsa hic facere voluptas aperiam modi doloremque magni
+            quis voluptatem quidem repellat!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, numquam. Vitae eligendi
+            repellendus perferendis vero fuga, deserunt libero, ipsa hic facere voluptas aperiam modi doloremque magni
+            quis voluptatem quidem repellat!</p>
+
+        <h1 id="h1">This is heading 01</h1>
+
+        <button onclick="changeFontSize()">Change Para color</button>
+    </div>
+
+    <div id="div2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, numquam. Vitae eligendi
+            repellendus perferendis vero fuga, deserunt libero, ipsa hic facere voluptas aperiam modi doloremque magni
+            quis voluptatem quidem repellat!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, numquam. Vitae eligendi
+            repellendus perferendis vero fuga, deserunt libero, ipsa hic facere voluptas aperiam modi doloremque magni
+            quis voluptatem quidem repellat!</p>
+
+        <h1 id="h1">This is heading 01</h1>
+
+        <button onclick="changeFontSize()">Change Para color</button>
+    </div>
+
+    <script>
+
+        function changeFontSize() {
+            // document.getElementById('para').style.textTransform = "uppercase";
+            // document.getElementById('para').style.fontFamily = "times new roman";
+
+            // document.getElementById('para1').style.textTransform = "uppercase";
+            // document.getElementById('para1').style.fontFamily = "times new roman";
+
+            // document.getElementById('para2').style.textTransform = "uppercase";
+            // document.getElementById('para2').style.fontFamily = "times new roman";
+
+
+
+
+
+
+
+            // var paras = document.getElementsByTagName('p');
+
+            // for (i = 0; i < paras.length; i++) {
+            //     paras[i].style.textTransform = "uppercase";
+            //     paras[i].style.fontFamily = "times new roman";
+            // }
+
+
+
+
+
+
+            var paras = document.getElementById('div1').getElementsByTagName('p');
+            for (i = 0; i < paras.length; i++) {
+                paras[i].style.textTransform = "uppercase";
+                paras[i].style.fontFamily = "times new roman";
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
