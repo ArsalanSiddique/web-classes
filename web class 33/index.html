@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading1 {
+        margin: 100px 200px 100px 200px;
+    }
+
+    .bg {
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <div class="bg">
+
+        <h1 class="heading1" id="heading">
+            Checking DOM
+        </h1>
+
+    </div>
+
+    <div id="p1">
+        <p>Hello This is p</p>
+    </div>
+
+
+
+    <div id="div1">
+        <p>Hello world1!</p>
+        <p>Hello world3</p>
+    </div>
+
+
+
+
+    <script>
+        var nodeToAdd = document.getElementById('p1');
+        var noteToBeAdded = document.createElement("img");
+
+        noteToBeAdded.setAttribute("src", "images/profile.png");
+        noteToBeAdded.setAttribute("width", "300");
+        noteToBeAdded.setAttribute("height", "200");
+        nodeToAdd.append(noteToBeAdded);
+
+
+
+
+
+
+
+        var parentDiv = document.getElementById("div1");
+        var newParagraph = document.createElement("p");
+        var t = document.createTextNode("Hello world2!");
+        newParagraph.appendChild(t);
+        target = parentDiv.childNodes[2];
+        parentDiv.insertBefore(newParagraph, target);
+        
+    </script>
+
+</body>
+
+</html>

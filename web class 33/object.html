@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Object</h1>
+
+
+    <script>
+
+        var plan = {
+            "name":         "Basic",
+            "price":        24.22,
+            "currency":     "USD",
+            "details":      "Here is the details...",
+            "features":     ["Feature 1", "Feature 2"],
+            "storage":      "32GB",
+            "database":     "5",
+            "domain":       0
+        };
+
+        console.log(plan);
+
+        plan.mailbox = "5"
+        plan.autoBackup = false
+
+        console.log(plan);
+
+        delete plan.details;
+
+        console.log(plan);
+
+
+        var hasDatabaseAttributes = "database" in plan;
+        console.log(hasDatabaseAttributes);
+
+
+        var hasDatabaseAttributes = "abcd" in plan;
+        console.log(hasDatabaseAttributes);
+
+
+        plan.autoBackup = true;
+
+    </script>
+</body>
+
+</html>
