@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+    commands:
+      - echo Installing dependencies...
+      - apt-get update -y
+      - apt-get install -y zip unzip curl
+      - curl -sS https://getcomposer.org/installer | php
+      - mv composer.phar /usr/local/bin/composer
+  pre_build:
+    commands:
+      - echo Preparing the application...
+      - composer install
+  build:
+    commands:
+      - echo Running tests...
+      - ./vendor/bin/phpunit tests
+  post_build:
+    commands:
+      - echo Build completed!
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+
+cache:
+  paths:
+    - vendor/**/* # Cache composer dependencies
